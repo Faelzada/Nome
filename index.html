@@ -1,25 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>∆</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coletânea de eBooks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <label for="nomeUsuario">Nome de Usuário:</label>
-    <input type="text" id="nomeUsuario" name="nomeUsuario"><br><br>
-    <label for="idade">Idade:</label>
-    <input type="number" id="idade" name="idade"><br><br>
-    <button onclick="verificarIdade()">Verificar</button>
-    <p id="resultado"></p>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Cabeçalho -->
+  <header class="bg-blue-600 text-white py-6 shadow-md">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-3xl font-bold">Coletânea de eBooks</h1>
+      <p class="text-blue-200 mt-1">Três títulos imperdíveis para expandir seu conhecimento</p>
+    </div>
+  </header>
 
-    <script>
-        function verificarIdade() {
-            var idade = document.getElementById("idade").value;
-            if (idade >= 18) {
-                document.getElementById("resultado").innerHTML = "Idade válida";
-            } else {
-                document.getElementById("resultado").innerHTML = "Não é idade válida";
-            }
-        }
-    </script>
+  <!-- Seção dos eBooks -->
+  <main class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <!-- eBook 1 -->
+    <div class="bg-white rounded-2xl shadow-md p-5 flex flex-col items-center text-center">
+      <img src="https://via.placeholder.com/150" alt="Capa eBook 1" class="rounded-xl mb-4 w-32 h-40 object-cover">
+      <h2 class="text-xl font-semibold mb-2">eBook 1: Título do Livro</h2>
+      <p class="text-sm mb-4">Descrição breve do eBook. Aprenda os conceitos fundamentais com exemplos práticos.</p>
+      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-xl">Baixar</a>
+    </div>
+
+    <!-- eBook 2 -->
+    <div class="bg-white rounded-2xl shadow-md p-5 flex flex-col items-center text-center">
+      <img src="https://via.placeholder.com/150" alt="Capa eBook 2" class="rounded-xl mb-4 w-32 h-40 object-cover">
+      <h2 class="text-xl font-semibold mb-2">eBook 2: Título do Livro</h2>
+      <p class="text-sm mb-4">Explore técnicas avançadas e aprofunde seus conhecimentos em pouco tempo.</p>
+      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-xl">Baixar</a>
+    </div>
+
+    <!-- eBook 3 -->
+    <div class="bg-white rounded-2xl shadow-md p-5 flex flex-col items-center text-center">
+      <img src="https://via.placeholder.com/150" alt="Capa eBook 3" class="rounded-xl mb-4 w-32 h-40 object-cover">
+      <h2 class="text-xl font-semibold mb-2">eBook 3: Título do Livro</h2>
+      <p class="text-sm mb-4">Descubra novas abordagens e práticas recomendadas no seu campo de estudo.</p>
+      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-xl">Baixar</a>
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-200 text-center text-sm text-gray-700 py-4 mt-10">
+    © 2025 Coletânea de eBooks. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
